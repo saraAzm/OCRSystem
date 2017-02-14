@@ -7,19 +7,20 @@ package Model;
 
 import java.util.Enumeration;
 import java.util.Vector;
+import javafx.scene.image.*;
 
 /**
  *
  * @author sanjab
  */
-public class OCR {
-    private String OCRSystemResult;
-    private String OCRUserResult;
-    private Boolean segmentCheck[];
-    private String segmentImage[];
-    private Status  segmentStatus[];
+public class OCRModel {
+    private char OCRSystemResult;
+    private char OCRUserResult;
+    private Boolean segmentCheck;
+    private Image segmentImage;
+    private Status  segmentStatus;
 
-    public OCR(String OCRSystemResult, String OCRUserResult, Boolean[] segmentCheck, String[] segmentImage, Status[] segmentStatus) {
+    public OCRModel(char OCRSystemResult, char OCRUserResult, Boolean segmentCheck, Image segmentImage, Status segmentStatus) {
         this.OCRSystemResult = OCRSystemResult;
         this.OCRUserResult = OCRUserResult;
         this.segmentCheck = segmentCheck;
@@ -27,45 +28,47 @@ public class OCR {
         this.segmentStatus = segmentStatus;
     }
     
-  
+  public OCRModel(){
+      
+  }
 
-    public String getOCRSystemResult() {
+    public char getOCRSystemResult() {
         return OCRSystemResult;
     }
 
-    public String getOCRUserResult() {
+    public char getOCRUserResult() {
         return OCRUserResult;
     }
 
-    public Boolean[] getSegmentCheck() {
+    public Boolean getSegmentCheck() {
         return segmentCheck;
     }
 
-    public String[] getSegmentImage() {
+    public Image getSegmentImage() {
         return segmentImage;
     }
 
-    public Status[] getSegmentStatus() {
+    public Status getSegmentStatus() {
         return segmentStatus;
     }
 
-    public void setOCRSystemResult(String OCRSystemResult) {
+    public void setOCRSystemResult(char OCRSystemResult) {
         this.OCRSystemResult = OCRSystemResult;
     }
 
-    public void setOCRUserResult(String OCRUserResult) {
+    public void setOCRUserResult(char OCRUserResult) {
         this.OCRUserResult = OCRUserResult;
     }
 
-    public void setSegmentCheck(Boolean[] segmentCheck) {
+    public void setSegmentCheck(Boolean segmentCheck) {
         this.segmentCheck = segmentCheck;
     }
 
-    public void setSegmentImage(String[] segmentImage) {
+    public void setSegmentImage(Image segmentImage) {
         this.segmentImage = segmentImage;
     }
 
-    public void setSegmentStatus(Status[] segmentStatus) {
+    public void setSegmentStatus(Status segmentStatus) {
         this.segmentStatus = segmentStatus;
     }
    

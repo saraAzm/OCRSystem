@@ -5,20 +5,22 @@
  */
 package Model;
 
+import javafx.scene.image.Image;
+
 /**
  *
  * @author sanjab
  */
 public class Plaque {
-    private String plaqueImage;
+    private Image plaqueImage;
     private Boolean readability;
     private Boolean completeness;
     private Boolean rotation;
     private Boolean smallness;
     private Color plaqueColor;
-    private OCR plaqueOCR;
+    private OCRModel plaqueOCR[];
 
-    public Plaque(String plaqueImage, Boolean readability, Boolean completeness, Boolean rotation, Boolean smallness, Color plaqueColor, OCR plaqueOCR) {
+    public Plaque(Image plaqueImage, Boolean readability, Boolean completeness, Boolean rotation, Boolean smallness, Color plaqueColor, OCRModel plaqueOCR[]) {
         this.plaqueImage = plaqueImage;
         this.readability = readability;
         this.completeness = completeness;
@@ -27,8 +29,10 @@ public class Plaque {
         this.plaqueColor = plaqueColor;
         this.plaqueOCR = plaqueOCR;
     }
-    
-    public String getPlaqueImage() {
+    public Plaque(){
+        
+    }
+    public Image getPlaqueImage() {
         return plaqueImage;
     }
 
@@ -52,11 +56,11 @@ public class Plaque {
         return plaqueColor;
     }
 
-    public OCR getPlaqueOCR() {
+    public OCRModel[] getPlaqueOCR() {
         return plaqueOCR;
     }
 
-    public void setPlaqueImage(String plaqueImage) {
+    public void setPlaqueImage(Image plaqueImage) {
         this.plaqueImage = plaqueImage;
     }
 
@@ -80,7 +84,7 @@ public class Plaque {
         this.plaqueColor = plaqueColor;
     }
 
-    public void setPlaqueOCR(OCR plaqueOCR) {
+    public void setPlaqueOCR(OCRModel[] plaqueOCR) {
         this.plaqueOCR = plaqueOCR;
     }
     

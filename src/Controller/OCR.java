@@ -1,18 +1,14 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Controller;
 
 /**
  *
  * @author sanjab
  */
-public enum Color {
-    WHITE,
-    YELLOW,
-    RED,
-    GREEN;
+public interface OCR {
+    public char Recognize(String Image);
 }
