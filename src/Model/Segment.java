@@ -5,39 +5,37 @@
  */
 package Model;
 
-import java.util.Enumeration;
-import java.util.Vector;
 import javafx.scene.image.*;
 
 /**
  *
  * @author sanjab
  */
-public class OCRModel {
-    private char OCRSystemResult;
-    private char OCRUserResult;
+public class Segment {
+    private char OCRSystemLabel;
+    private char UserLabel;
     private Boolean segmentCheck;
     private Image segmentImage;
     private Status  segmentStatus;
 
-    public OCRModel(char OCRSystemResult, char OCRUserResult, Boolean segmentCheck, Image segmentImage, Status segmentStatus) {
-        this.OCRSystemResult = OCRSystemResult;
-        this.OCRUserResult = OCRUserResult;
+    public Segment(char OCRSystemLabel, char UserLabel, Boolean segmentCheck, Image segmentImage, Status segmentStatus) {
+        this.OCRSystemLabel = OCRSystemLabel;
+        this.UserLabel = UserLabel;
         this.segmentCheck = segmentCheck;
         this.segmentImage = segmentImage;
         this.segmentStatus = segmentStatus;
     }
     
-  public OCRModel(){
+  public Segment(){
       
   }
 
-    public char getOCRSystemResult() {
-        return OCRSystemResult;
+    public char getOCRSystemLabel() {
+        return OCRSystemLabel;
     }
 
-    public char getOCRUserResult() {
-        return OCRUserResult;
+    public char getUserLabel() {
+        return UserLabel;
     }
 
     public Boolean getSegmentCheck() {
@@ -52,12 +50,12 @@ public class OCRModel {
         return segmentStatus;
     }
 
-    public void setOCRSystemResult(char OCRSystemResult) {
-        this.OCRSystemResult = OCRSystemResult;
+    public void setOCRSystemLabel(char OCRSystemLabel) {
+        this.OCRSystemLabel = OCRSystemLabel;
     }
 
-    public void setOCRUserResult(char OCRUserResult) {
-        this.OCRUserResult = OCRUserResult;
+    public void setUserLabel(char UserLabel) {
+        this.UserLabel = UserLabel;
     }
 
     public void setSegmentCheck(Boolean segmentCheck) {
@@ -71,7 +69,8 @@ public class OCRModel {
     public void setSegmentStatus(Status segmentStatus) {
         this.segmentStatus = segmentStatus;
     }
-   
+
+    
     
   
    

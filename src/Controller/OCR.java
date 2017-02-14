@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 package Controller;
+import javafx.scene.image.Image;
 
 /**
  *
  * @author sanjab
  */
 public interface OCR {
-    public char Recognize(String Image);
+    public char Recognize(Image Image);
 }

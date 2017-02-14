@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 package Controller;
+import javafx.scene.image.Image;
 
 /**
  *
  * @author sanjab
- */
+ */	
 public interface Segmenter {
-    public String[] segmneter(String Image);
+    public Image[] segmneter(Image Image);
 }

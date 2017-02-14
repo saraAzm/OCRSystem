@@ -11,29 +11,30 @@ import javafx.scene.image.Image;
  *
  * @author sanjab
  */
-public class Plaque {
-    private Image plaqueImage;
+public class Plate {
+    private Image plateImage;
     private Boolean readability;
     private Boolean completeness;
     private Boolean rotation;
     private Boolean smallness;
-    private Color plaqueColor;
-    private OCRModel plaqueOCR[];
+    private Color plateColor;
+    private Segment[] segments;
 
-    public Plaque(Image plaqueImage, Boolean readability, Boolean completeness, Boolean rotation, Boolean smallness, Color plaqueColor, OCRModel plaqueOCR[]) {
-        this.plaqueImage = plaqueImage;
+    public Plate(Image plateImage, Boolean readability, Boolean completeness, Boolean rotation, Boolean smallness, Color plateColor, Segment sgmts[]) {
+        this.plateImage = plateImage;
         this.readability = readability;
         this.completeness = completeness;
         this.rotation = rotation;
         this.smallness = smallness;
-        this.plaqueColor = plaqueColor;
-        this.plaqueOCR = plaqueOCR;
+        this.plateColor = plateColor;
+        this.segments = sgmts;
     }
-    public Plaque(){
+    public Plate(){
         
     }
-    public Image getPlaqueImage() {
-        return plaqueImage;
+
+    public Image getPlateImage() {
+        return plateImage;
     }
 
     public Boolean getReadability() {
@@ -52,16 +53,16 @@ public class Plaque {
         return smallness;
     }
 
-    public Color getPlaqueColor() {
-        return plaqueColor;
+    public Color getPlateColor() {
+        return plateColor;
     }
 
-    public OCRModel[] getPlaqueOCR() {
-        return plaqueOCR;
+    public Segment[] getSegments() {
+        return segments;
     }
 
-    public void setPlaqueImage(Image plaqueImage) {
-        this.plaqueImage = plaqueImage;
+    public void setPlateImage(Image plateImage) {
+        this.plateImage = plateImage;
     }
 
     public void setReadability(Boolean readability) {
@@ -80,13 +81,15 @@ public class Plaque {
         this.smallness = smallness;
     }
 
-    public void setPlaqueColor(Color plaqueColor) {
-        this.plaqueColor = plaqueColor;
+    public void setPlateColor(Color plateColor) {
+        this.plateColor = plateColor;
     }
 
-    public void setPlaqueOCR(OCRModel[] plaqueOCR) {
-        this.plaqueOCR = plaqueOCR;
+    public void setSegments(Segment[] segments) {
+        this.segments = segments;
     }
+
+
     
   
 }
