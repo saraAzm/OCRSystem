@@ -12,16 +12,16 @@ import javafx.scene.image.*;
  * @author sanjab
  */
 public class Segment {
-    private char OCRSystemLabel;
-    private char UserLabel;
-    private Boolean segmentCheck;
+    private char OCRSystemLabel; // OCRLibarary result!
+    private char UserLabel;     // user guess result!
+    private Boolean badSegmented; // when is bad == True, when good False!  
     private Image segmentImage;
-    private Status  segmentStatus;
+    private Status  segmentStatus; // is correctly guessed or not!
 
     public Segment(char OCRSystemLabel, char UserLabel, Boolean segmentCheck, Image segmentImage, Status segmentStatus) {
         this.OCRSystemLabel = OCRSystemLabel;
         this.UserLabel = UserLabel;
-        this.segmentCheck = segmentCheck;
+        this.badSegmented = segmentCheck;
         this.segmentImage = segmentImage;
         this.segmentStatus = segmentStatus;
     }
@@ -30,43 +30,47 @@ public class Segment {
       
   }
 
-    public char getOCRSystemLabel() {
+    public char getRecognize() {
         return OCRSystemLabel;
     }
 
-    public char getUserLabel() {
+    public char getLabel() {
         return UserLabel;
     }
 
-    public Boolean getSegmentCheck() {
-        return segmentCheck;
+    public Boolean getBad(){
+        return badSegmented;
+    }
+    
+    public Boolean isBad() {
+        return badSegmented;
     }
 
-    public Image getSegmentImage() {
+    public Image getImage() {
         return segmentImage;
     }
 
-    public Status getSegmentStatus() {
+    public Status getStatus() {
         return segmentStatus;
     }
 
-    public void setOCRSystemLabel(char OCRSystemLabel) {
+    public void setRecognize(char OCRSystemLabel) {
         this.OCRSystemLabel = OCRSystemLabel;
     }
 
-    public void setUserLabel(char UserLabel) {
+    public void setLabel(char UserLabel) {
         this.UserLabel = UserLabel;
     }
 
-    public void setSegmentCheck(Boolean segmentCheck) {
-        this.segmentCheck = segmentCheck;
+    public void setBad(Boolean segmentCheck) {
+        this.badSegmented = segmentCheck;
     }
 
-    public void setSegmentImage(Image segmentImage) {
+    public void setImage(Image segmentImage) {
         this.segmentImage = segmentImage;
     }
 
-    public void setSegmentStatus(Status segmentStatus) {
+    public void setStatus(Status segmentStatus) {
         this.segmentStatus = segmentStatus;
     }
 
