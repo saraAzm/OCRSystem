@@ -3,11 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/Model/OCR.java</file>
-            <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/Model/Plaque.java</file>
+            <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/Model/Segment.java</file>
             <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/Model/Color.java</file>
+            <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/Controller/Segmenter.java</file>
             <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/Model/Status.java</file>
+            <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/Controller/OCR.java</file>
             <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/ocr_system/OCR_system.java</file>
+            <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/Model/Plate.java</file>
+            <file>file:/C:/Users/sanjab/Documents/NetBeansProjects/OCR_system/src/ocr_system/Segmented.java</file>
         </group>
     </open-files>
 </project-private>
